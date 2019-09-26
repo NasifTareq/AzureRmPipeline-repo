@@ -12,9 +12,9 @@ pool:
 steps:
 - task: AzureResourceGroupDeployment@2
   inputs:
-    azureSubscription: '[tareqconn]'
+    azureSubscription: 'tareqconn'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: '[rgh]'
+    resourceGroupName: 'rgh'
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateAzureStorage/azuredeploy.json'
